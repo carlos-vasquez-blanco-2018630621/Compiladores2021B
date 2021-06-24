@@ -1,6 +1,6 @@
 %{
 
- #include <stdlio.h>
+ #include <stdio.h>
  #include <stdlib.h>
  #include "sintactico.tab.h"
 
@@ -12,9 +12,6 @@ digit	[0-9]
 %%
 
 {char}({char}|{digit})*	{return ID;}
-
-
-char+	{return }
 
 "if"	{return IF;}
 "else"	{return ELSE;}
