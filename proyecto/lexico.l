@@ -13,6 +13,8 @@ digit	[0-9]
 
 {char}({char}|{digit})*	{return ID;}
 
+char	{return WORD;}
+digit	{return DIGIT;}
 "if"	{return IF;}
 "else"	{return ELSE;}
 "while" {return WHILE;}
