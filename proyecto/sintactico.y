@@ -37,3 +37,11 @@ linea: fun '(' WORD ')' '{'
 
 fun: IF | FOR | WHILE
 ;
+
+%%
+
+int main(){
+	return yyparse();
+}
+
+
